@@ -11,6 +11,8 @@
 |
 */
 
+use App\Http\Controllers\ViewController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,5 +22,8 @@ Route::get('tugas4', function () {
 Route::get('praktikum2', function () {
     return view('htmlprak2');
 });
-Route::get('isiannama',"ViewController@showForm");
-Route::post('greetings',"ViewController@resultGreetings");
+//Route::get('isiannama',"ViewController@showForm");
+//Route::post('greetings',"ViewController@resultGreetings");
+Route::get('ets', "ViewController@ets");
+Route::get('formtugasphp', "ViewController@formtugasphp");
+Route::get('hasiltugasphp', "ViewController@hasiltugasphp");
