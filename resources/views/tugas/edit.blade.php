@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Edit</title>
-</head>
-<body>
-	<h3>Data Tugas</h3>
-
+@extends('layout.bahagia')
+@section('title','Edit Tugas')
+@section('judulhalaman', 'Edit Tugas')
+@section('konten')
 	<a href="/tugas"> Kembali</a>
 
 	<br/>
@@ -21,6 +17,4 @@
 		<input type="submit" value="Simpan Data">
 	</form>
     @endforeach
-
-</body>
-</html>
+@endsection

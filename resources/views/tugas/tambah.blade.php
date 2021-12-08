@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tambah</title>
-</head>
-<body>
-	<h3>Data Tugas</h3>
-
+@extends('layout.bahagia')
+@section('title','Tambah Tugas')
+@section('judulhalaman', 'Tambah Tugas')
+@section('konten')
 	<a href="/tugas"> Kembali</a>
 
 	<br/>
@@ -19,6 +15,4 @@
 		Status <input type="text" name="status" required="required"> <br/>
 		<input type="submit" value="Simpan Data">
 	</form>
-
-</body>
-</html>
+@endsection

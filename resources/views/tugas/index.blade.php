@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tugas</title>
-</head>
-<body>
-
-	<h3>Data Tugas</h3>
-
+@extends('layout.bahagia')
+@section('title','Daftar Tugas')
+@section('judulhalaman', 'Daftar Tugas')
+@section('konten')
 	<a href="/tugas/tambah"> + Tambah Tugas Baru</a>
 
 	<br/>
@@ -34,6 +29,4 @@
 		</tr>
 		@endforeach
 	</table>
-
-</body>
-</html>
+@endsection
