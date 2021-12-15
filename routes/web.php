@@ -11,6 +11,7 @@
 |
 */
 
+use App\Http\Controllers\EasController;
 use App\Http\Controllers\ViewController;
 
 Route::get('/', function () {
@@ -35,6 +36,8 @@ Route::post('/pegawai/store','PegawaiController@store');
 Route::get('/pegawai/edit/{id}','PegawaiController@edit');
 Route::post('/pegawai/update','PegawaiController@update');
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+Route::get('/pegawai/cari','PegawaiController@cari');
+Route::get('/pegawai/view/{id}','PegawaiController@detail');
 
 //route Tugas CRUD
 Route::get('/tugas','TugasController@index');
@@ -44,6 +47,7 @@ Route::get('/tugas/edit/{id}','TugasController@edit');
 Route::post('/tugas/update','TugasController@update');
 Route::get('/tugas/hapus/{id}','TugasController@hapus');
 
+
 //route CRUD absen
 Route::get('/absen','AbsenController@indexabsen');
 Route::get('/absen/add','AbsenController@add');
@@ -51,3 +55,8 @@ Route::post('/absen/store','AbsenController@store');
 Route::get('/absen/edit/{id}','AbsenController@edit');
 Route::post('/absen/update','AbsenController@update');
 Route::get('/absen/hapus/{id}','AbsenController@hapus');
+
+//route eas
+Route::get('/eas','EasController@index');
+Route::get('/eas/tambah', 'EasController@tambah');
+Route::post('/eas/store', 'EasController@store');
